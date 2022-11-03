@@ -1,4 +1,4 @@
-name: Test deploy                    # Workflow 이름
+name: main action                    # Workflow 이름
 on:                                  # Event 감지
   push:
     branches:
