@@ -17,4 +17,4 @@ jobs:                                # Job 설정
         run: npm install --frozen-lockfile
 
       - name: Build                   # React Build
-        run: npm build
+        run: npm run build
