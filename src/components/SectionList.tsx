@@ -16,10 +16,10 @@ type SectionListProps = {
 function SectionList({ sections, renderSectionHeader, renderItem }: SectionListProps) {
   return (
     <>
-      {sections.map((section) => (
+      {sections?.map((section) => (
         <React.Fragment key={section.title}>
           {renderSectionHeader(section)}
-          {section.data.map((item) => (
+          {section.data?.map((item) => (
             <React.Fragment key={item.key}>{renderItem(item)}</React.Fragment>
           ))}
         </React.Fragment>

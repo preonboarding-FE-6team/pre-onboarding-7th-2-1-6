@@ -13,23 +13,23 @@ export const getVehicleDetailSections = (vehicle: VehicleBasic) => [
       {
         item: '차종',
         key: '차종',
-        content: vehicleSegment[vehicle.attribute.segment],
+        content: vehicleSegment[vehicle?.attribute?.segment],
       },
       {
         item: '연료',
         key: '연료',
-        content: vehicleFuelType[vehicle.attribute.fuelType],
+        content: vehicleFuelType[vehicle?.attribute?.fuelType],
       },
       {
         item: '이용 가능일',
         key: '이용 가능일',
-        content: `${parseDate(vehicle.startDate)} 부터`,
+        content: `${parseDate(vehicle?.startDate)} 부터`,
       },
     ],
   },
   {
     title: '보험',
-    data: vehicle.insurance.map((i) => ({
+    data: vehicle?.insurance?.map((i) => ({
       item: i.name,
       key: i.name,
       content: i.description,
@@ -37,7 +37,7 @@ export const getVehicleDetailSections = (vehicle: VehicleBasic) => [
   },
   {
     title: '추가상품',
-    data: vehicle.additionalProducts.map((p) => ({
+    data: vehicle?.additionalProducts?.map((p) => ({
       item: p.name,
       key: p.name,
       content: `월 ${p.amount.toLocaleString()} 원`,

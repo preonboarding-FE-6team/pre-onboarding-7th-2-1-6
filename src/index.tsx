@@ -9,7 +9,7 @@ import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
-  <React.StrictMode>
+  <>
     <GlobalStyle />
     <ThemeProvider theme={{ ...colors, ...padding }}>
       <BrowserRouter>
@@ -18,5 +18,5 @@ root.render(
         </HelmetProvider>
       </BrowserRouter>
     </ThemeProvider>
-  </React.StrictMode>
+  </>
 );
