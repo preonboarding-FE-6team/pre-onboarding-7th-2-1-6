@@ -16,6 +16,8 @@ function VehicleList() {
   const segment = useMemo(() => getSegment(searchParams), [searchParams]);
 
   useEffect(() => {
+    // eslint-disable-next-line
+    alert('테스트');
     getVehicles({ segment });
   }, [segment]);
 
