@@ -41,3 +41,12 @@ export type CategoryValues = {
   segment: VehicleSegment | '';
   content: string;
 };
+
+export type SectionsValues = {
+  title: string;
+  data: {
+    item: string;
+    key: string;
+    content: string;
+  }[];
+};
