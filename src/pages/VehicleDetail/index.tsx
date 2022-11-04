@@ -79,6 +79,8 @@ export default VehicleDetail;
 
 const Image = styled.img`
   width: 100%;
+  height: 205px;
+  object-fit: contain;
 `;
 
 const Title = styled.div`
