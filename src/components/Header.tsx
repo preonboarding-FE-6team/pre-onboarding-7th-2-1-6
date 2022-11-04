@@ -11,7 +11,7 @@ type HeaderProps = {
 function Header({ hasBackButton = false, title }: HeaderProps) {
   const navigate = useNavigate();
 
-  const handleClick = () => navigate(-1);
+  const handleClick = () => navigate('/');
 
   return (
     <Container>
@@ -30,7 +30,7 @@ const Container = styled.header`
   ${flexBox('row', 'space-between')}
   width: 100%;
   height: 60px;
-  padding: 0 ${({ theme }) => theme.paddingHorizontal}};
+  padding: 0 ${({ theme }) => theme.paddingHorizontal};
   border-bottom: 1px solid ${({ theme }) => theme.black};
   font-size: 17px;
   font-weight: 600;
