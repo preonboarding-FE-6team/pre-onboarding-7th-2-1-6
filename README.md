@@ -5,7 +5,7 @@
 > 기간 :2022년 11월 1일(화) - 2022년 11월 4일(금)
 > 
 
-**📎[배포링크 바로가기](https://preonboarding-vehicle-rental.herokuapp.com/)**
+**📎[배포링크 바로가기](https://preonboarding-team-6.herokuapp.com/)**
 
 
 # **👨‍👩‍👧‍👦 Members**
