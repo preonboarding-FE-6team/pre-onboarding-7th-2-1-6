@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { useLocation, useNavigate, useParams } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 import styled from 'styled-components';
 import Container from '../../components/Container';
 import Header from '../../components/Header';
@@ -52,26 +51,16 @@ function VehicleDetail() {
     );
 
   return (
-    <>
-      <Helmet>
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={`https://vehicle-rental-service.vercel.app/vehicles/${vehicle?.id}`} />
-        <meta property="og:title" content={`${vehicle?.attribute?.brand} | ${vehicle?.attribute?.name}`} />
-        <meta property="og:description" content={`월 ${vehicle?.amount?.toLocaleString()} 원`} />
-        <meta property="og:image" content={vehicle?.attribute?.imageUrl} />
-      </Helmet>
-
-      <Container>
-        <Header title="차량상세" hasBackButton />
-        <Image alt={vehicle?.attribute?.name} src={vehicle?.attribute?.imageUrl} />
-        <Title>
-          <div>{vehicle?.attribute?.brand}</div>
-          <div>{vehicle?.attribute?.name}</div>
-        </Title>
-        <SectionItem item={{ content: `월 ${vehicle?.amount?.toLocaleString()} 원` }} />
-        <SectionList sections={sections} renderSectionHeader={renderSectionHeader} renderItem={renderSectionItem} />
-      </Container>
-    </>
+    <Container>
+      <Header title="차량상세" hasBackButton />
+      <Image alt={vehicle?.attribute?.name} src={vehicle?.attribute?.imageUrl} />
+      <Title>
+        <div>{vehicle?.attribute?.brand}</div>
+        <div>{vehicle?.attribute?.name}</div>
+      </Title>
+      <SectionItem item={{ content: `월 ${vehicle?.amount?.toLocaleString()} 원` }} />
+      <SectionList sections={sections} renderSectionHeader={renderSectionHeader} renderItem={renderSectionItem} />
+    </Container>
   );
 }
 

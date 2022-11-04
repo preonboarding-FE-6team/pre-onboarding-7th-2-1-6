@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import {} from 'react-router-dom';
 import styled, { css } from 'styled-components';
 import { flexBox } from '../../styles/mixin';
 import { VehicleSegment } from '../../types';
