@@ -7,9 +7,7 @@ type SectionsValues = {
 
 type SectionListProps = {
   sections: SectionsValues[];
-  // eslint-disable-next-line
   renderSectionHeader: (section: any) => JSX.Element;
-  // eslint-disable-next-line
   renderItem: (item: any) => JSX.Element;
 };
 
